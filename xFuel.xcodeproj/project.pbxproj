@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503FBAB6178ED47D00BE6664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB5178ED47D00BE6664 /* UIKit.framework */; };
+		503FBAB8178ED47D00BE6664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB7178ED47D00BE6664 /* Foundation.framework */; };
+		503FBABA178ED47D00BE6664 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB9178ED47D00BE6664 /* CoreGraphics.framework */; };
+		503FBAC0178ED47D00BE6664 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 503FBABE178ED47D00BE6664 /* InfoPlist.strings */; };
+		503FBAC2178ED47D00BE6664 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAC1178ED47D00BE6664 /* main.m */; };
+		503FBAC6178ED47D00BE6664 /* JKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */; };
+		503FBAC8178ED47D00BE6664 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FBAC7178ED47D00BE6664 /* Default.png */; };
+		503FBACA178ED47D00BE6664 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FBAC9178ED47D00BE6664 /* Default@2x.png */; };
+		503FBACC178ED47D00BE6664 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FBACB178ED47D00BE6664 /* Default-568h@2x.png */; };
+		503FBACF178ED47D00BE6664 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */; };
+		503FBAD2178ED47D00BE6664 /* JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAD1178ED47D00BE6664 /* JKViewController.m */; };
+		503FBADA178ED47D00BE6664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAD9178ED47D00BE6664 /* SenTestingKit.framework */; };
+		503FBADB178ED47D00BE6664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB5178ED47D00BE6664 /* UIKit.framework */; };
+		503FBADC178ED47D00BE6664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB7178ED47D00BE6664 /* Foundation.framework */; };
+		503FBAE4178ED47D00BE6664 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 503FBAE2178ED47D00BE6664 /* InfoPlist.strings */; };
+		503FBAE7178ED47D00BE6664 /* xFuelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAE6178ED47D00BE6664 /* xFuelTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		503FBADD178ED47D00BE6664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 503FBAAA178ED47D00BE6664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 503FBAB1178ED47D00BE6664;
+			remoteInfo = xFuel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		503FBAB2178ED47D00BE6664 /* xFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503FBAB5178ED47D00BE6664 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		503FBAB7178ED47D00BE6664 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		503FBAB9178ED47D00BE6664 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		503FBABD178ED47D00BE6664 /* xFuel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xFuel-Info.plist"; sourceTree = "<group>"; };
+		503FBABF178ED47D00BE6664 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		503FBAC1178ED47D00BE6664 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		503FBAC3178ED47D00BE6664 /* xFuel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xFuel-Prefix.pch"; sourceTree = "<group>"; };
+		503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKAppDelegate.h; sourceTree = "<group>"; };
+		503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAppDelegate.m; sourceTree = "<group>"; };
+		503FBAC7178ED47D00BE6664 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		503FBAC9178ED47D00BE6664 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		503FBACB178ED47D00BE6664 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		503FBACE178ED47D00BE6664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		503FBAD0178ED47D00BE6664 /* JKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewController.h; sourceTree = "<group>"; };
+		503FBAD1178ED47D00BE6664 /* JKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKViewController.m; sourceTree = "<group>"; };
+		503FBAD8178ED47D00BE6664 /* xFuelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xFuelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		503FBAD9178ED47D00BE6664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		503FBAE1178ED47D00BE6664 /* xFuelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xFuelTests-Info.plist"; sourceTree = "<group>"; };
+		503FBAE3178ED47D00BE6664 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		503FBAE5178ED47D00BE6664 /* xFuelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xFuelTests.h; sourceTree = "<group>"; };
+		503FBAE6178ED47D00BE6664 /* xFuelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xFuelTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		503FBAAF178ED47D00BE6664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBAB6178ED47D00BE6664 /* UIKit.framework in Frameworks */,
+				503FBAB8178ED47D00BE6664 /* Foundation.framework in Frameworks */,
+				503FBABA178ED47D00BE6664 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503FBAD4178ED47D00BE6664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBADA178ED47D00BE6664 /* SenTestingKit.framework in Frameworks */,
+				503FBADB178ED47D00BE6664 /* UIKit.framework in Frameworks */,
+				503FBADC178ED47D00BE6664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		503FBAA9178ED47D00BE6664 = {
+			isa = PBXGroup;
+			children = (
+				503FBABB178ED47D00BE6664 /* xFuel */,
+				503FBADF178ED47D00BE6664 /* xFuelTests */,
+				503FBAB4178ED47D00BE6664 /* Frameworks */,
+				503FBAB3178ED47D00BE6664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		503FBAB3178ED47D00BE6664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				503FBAB2178ED47D00BE6664 /* xFuel.app */,
+				503FBAD8178ED47D00BE6664 /* xFuelTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		503FBAB4178ED47D00BE6664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				503FBAB5178ED47D00BE6664 /* UIKit.framework */,
+				503FBAB7178ED47D00BE6664 /* Foundation.framework */,
+				503FBAB9178ED47D00BE6664 /* CoreGraphics.framework */,
+				503FBAD9178ED47D00BE6664 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		503FBABB178ED47D00BE6664 /* xFuel */ = {
+			isa = PBXGroup;
+			children = (
+				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
+				503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */,
+				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
+				503FBAD0178ED47D00BE6664 /* JKViewController.h */,
+				503FBAD1178ED47D00BE6664 /* JKViewController.m */,
+				503FBABC178ED47D00BE6664 /* Supporting Files */,
+			);
+			path = xFuel;
+			sourceTree = "<group>";
+		};
+		503FBABC178ED47D00BE6664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				503FBABD178ED47D00BE6664 /* xFuel-Info.plist */,
+				503FBABE178ED47D00BE6664 /* InfoPlist.strings */,
+				503FBAC1178ED47D00BE6664 /* main.m */,
+				503FBAC3178ED47D00BE6664 /* xFuel-Prefix.pch */,
+				503FBAC7178ED47D00BE6664 /* Default.png */,
+				503FBAC9178ED47D00BE6664 /* Default@2x.png */,
+				503FBACB178ED47D00BE6664 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		503FBADF178ED47D00BE6664 /* xFuelTests */ = {
+			isa = PBXGroup;
+			children = (
+				503FBAE5178ED47D00BE6664 /* xFuelTests.h */,
+				503FBAE6178ED47D00BE6664 /* xFuelTests.m */,
+				503FBAE0178ED47D00BE6664 /* Supporting Files */,
+			);
+			path = xFuelTests;
+			sourceTree = "<group>";
+		};
+		503FBAE0178ED47D00BE6664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				503FBAE1178ED47D00BE6664 /* xFuelTests-Info.plist */,
+				503FBAE2178ED47D00BE6664 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		503FBAB1178ED47D00BE6664 /* xFuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503FBAEA178ED47D00BE6664 /* Build configuration list for PBXNativeTarget "xFuel" */;
+			buildPhases = (
+				503FBAAE178ED47D00BE6664 /* Sources */,
+				503FBAAF178ED47D00BE6664 /* Frameworks */,
+				503FBAB0178ED47D00BE6664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xFuel;
+			productName = xFuel;
+			productReference = 503FBAB2178ED47D00BE6664 /* xFuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		503FBAD7178ED47D00BE6664 /* xFuelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503FBAED178ED47D00BE6664 /* Build configuration list for PBXNativeTarget "xFuelTests" */;
+			buildPhases = (
+				503FBAD3178ED47D00BE6664 /* Sources */,
+				503FBAD4178ED47D00BE6664 /* Frameworks */,
+				503FBAD5178ED47D00BE6664 /* Resources */,
+				503FBAD6178ED47D00BE6664 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503FBADE178ED47D00BE6664 /* PBXTargetDependency */,
+			);
+			name = xFuelTests;
+			productName = xFuelTests;
+			productReference = 503FBAD8178ED47D00BE6664 /* xFuelTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		503FBAAA178ED47D00BE6664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JK;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Julian Kleine";
+			};
+			buildConfigurationList = 503FBAAD178ED47D00BE6664 /* Build configuration list for PBXProject "xFuel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 503FBAA9178ED47D00BE6664;
+			productRefGroup = 503FBAB3178ED47D00BE6664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				503FBAB1178ED47D00BE6664 /* xFuel */,
+				503FBAD7178ED47D00BE6664 /* xFuelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503FBAB0178ED47D00BE6664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBAC0178ED47D00BE6664 /* InfoPlist.strings in Resources */,
+				503FBAC8178ED47D00BE6664 /* Default.png in Resources */,
+				503FBACA178ED47D00BE6664 /* Default@2x.png in Resources */,
+				503FBACC178ED47D00BE6664 /* Default-568h@2x.png in Resources */,
+				503FBACF178ED47D00BE6664 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503FBAD5178ED47D00BE6664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBAE4178ED47D00BE6664 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		503FBAD6178ED47D00BE6664 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		503FBAAE178ED47D00BE6664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBAC2178ED47D00BE6664 /* main.m in Sources */,
+				503FBAC6178ED47D00BE6664 /* JKAppDelegate.m in Sources */,
+				503FBAD2178ED47D00BE6664 /* JKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503FBAD3178ED47D00BE6664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503FBAE7178ED47D00BE6664 /* xFuelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		503FBADE178ED47D00BE6664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 503FBAB1178ED47D00BE6664 /* xFuel */;
+			targetProxy = 503FBADD178ED47D00BE6664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		503FBABE178ED47D00BE6664 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503FBABF178ED47D00BE6664 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503FBACE178ED47D00BE6664 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		503FBAE2178ED47D00BE6664 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503FBAE3178ED47D00BE6664 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		503FBAE8178ED47D00BE6664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		503FBAE9178ED47D00BE6664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		503FBAEB178ED47D00BE6664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xFuel/xFuel-Prefix.pch";
+				INFOPLIST_FILE = "xFuel/xFuel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		503FBAEC178ED47D00BE6664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xFuel/xFuel-Prefix.pch";
+				INFOPLIST_FILE = "xFuel/xFuel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		503FBAEE178ED47D00BE6664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xFuel.app/xFuel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xFuel/xFuel-Prefix.pch";
+				INFOPLIST_FILE = "xFuelTests/xFuelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		503FBAEF178ED47D00BE6664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xFuel.app/xFuel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xFuel/xFuel-Prefix.pch";
+				INFOPLIST_FILE = "xFuelTests/xFuelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		503FBAAD178ED47D00BE6664 /* Build configuration list for PBXProject "xFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503FBAE8178ED47D00BE6664 /* Debug */,
+				503FBAE9178ED47D00BE6664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503FBAEA178ED47D00BE6664 /* Build configuration list for PBXNativeTarget "xFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503FBAEB178ED47D00BE6664 /* Debug */,
+				503FBAEC178ED47D00BE6664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		503FBAED178ED47D00BE6664 /* Build configuration list for PBXNativeTarget "xFuelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503FBAEE178ED47D00BE6664 /* Debug */,
+				503FBAEF178ED47D00BE6664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 503FBAAA178ED47D00BE6664 /* Project object */;
+}
