@@ -49,7 +49,8 @@
     return self;
 }
 - (void) update {
-    self.aLabel.text = self.car.name;
+    self.name.text = self.car.name;
+    self.fuelType.text = self.car.fuelType;
 }
     
 @end

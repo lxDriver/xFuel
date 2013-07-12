@@ -15,6 +15,10 @@
  */
 @property (nonatomic, retain) NSString *name;
 /**
+ the fuel type
+ */
+@property (nonatomic, retain) NSString *fuelType;
+/**
  an image you can take to see your car
  */
 @property (nonatomic, retain) UIImage *image;

@@ -11,7 +11,8 @@
 
 @interface JKCarViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *aLabel;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *fuelType;
 @property (assign, nonatomic) int position;
 
 @property (retain, nonatomic) JKCar *car;

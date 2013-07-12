@@ -18,6 +18,7 @@
     self = [super init];
     if (self) {
         self.name = aName;
+        self.fuelType = @"Kraftstoff";
         self.image = nil;
         self.fuelItems = [[NSMutableArray alloc] init];
     }
@@ -33,7 +34,7 @@
         
         // create a new car and init with name
         JKCar *car = [[JKCar alloc] initWithName:[dic objectForKey:@"name"]];
-        
+        car.fuelType = [dic objectForKey:@"fuelType"];
         //@TODO: Implement images
         //car.image = [dic objectForKey:@"image"];
         
@@ -109,7 +110,7 @@
         // add the parsed fuel items as array to the result dictionary
         [aCarDic setObject:currentCar.name forKey:@"name"];
         [aCarDic setObject:fuelDataArray forKey:@"fuelItems"];
-        
+        [aCarDic setObject:currentCar.fuelType forKey:@"fuelType"];
         [results addObject:aCarDic];
     }
     
