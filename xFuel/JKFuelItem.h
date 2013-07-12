@@ -40,4 +40,10 @@
  */
 @property (nonatomic, retain) CLLocation *location;
 
+/** 
+ init method with dictionary must(!) contain
+    NSNumber price,volume,distance
+    CLLocation location
+ */
+- (id)initWithDictionary:(NSDictionary*)dictionary;
 @end

@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class JKFuelItem;
+#import "JKFuelItem.h"
 
 @interface JKCar : NSObject
 /**
@@ -22,6 +21,6 @@
 /**
  an array representing all the fuel items
  */
-@property (nonatomic, retain) NSArray *fuelItems;
+@property (nonatomic, retain) NSMutableArray *fuelItems;
 
 @end

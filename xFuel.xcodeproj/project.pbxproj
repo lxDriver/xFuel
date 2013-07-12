@@ -25,6 +25,7 @@
 		503FBAE7178ED47D00BE6664 /* xFuelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAE6178ED47D00BE6664 /* xFuelTests.m */; };
 		503FBAF4178ED62900BE6664 /* JKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF3178ED62900BE6664 /* JKCar.m */; };
 		503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */; };
+		B98909491790011C00682BA2 /* JKPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B98909481790011C00682BA2 /* JKPlistParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,9 @@
 		503FBAF3178ED62900BE6664 /* JKCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCar.m; sourceTree = "<group>"; };
 		503FBAF6178ED6FF00BE6664 /* JKFuelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFuelItem.h; sourceTree = "<group>"; };
 		503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFuelItem.m; sourceTree = "<group>"; };
+		B98909471790011C00682BA2 /* JKPlistParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParser.h; sourceTree = "<group>"; };
+		B98909481790011C00682BA2 /* JKPlistParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPlistParser.m; sourceTree = "<group>"; };
+		B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParserProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		503FBABB178ED47D00BE6664 /* xFuel */ = {
 			isa = PBXGroup;
 			children = (
+				B9890946179000EE00682BA2 /* Parser */,
 				503FBAF1178ED4E900BE6664 /* Controller */,
 				503FBAF0178ED4D900BE6664 /* Model */,
 				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
@@ -184,6 +189,16 @@
 				503FBAD1178ED47D00BE6664 /* JKViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		B9890946179000EE00682BA2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				B98909471790011C00682BA2 /* JKPlistParser.h */,
+				B98909481790011C00682BA2 /* JKPlistParser.m */,
+				B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */,
+			);
+			name = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +317,7 @@
 				503FBAD2178ED47D00BE6664 /* JKViewController.m in Sources */,
 				503FBAF4178ED62900BE6664 /* JKCar.m in Sources */,
 				503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */,
+				B98909491790011C00682BA2 /* JKPlistParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
