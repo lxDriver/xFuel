@@ -27,4 +27,12 @@
  class method to create fuel Items
  */
 + (NSArray *)createItemsByArray:(NSArray *)array;
+/**
+ class method to return an dictionary from an array
+ */
++ (NSArray *)getItemsByArray:(NSMutableArray *)aArray;
+/**
+ init with name
+ */
+- (id)initWithName:(NSString *)aName;
 @end

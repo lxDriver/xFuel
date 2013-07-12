@@ -27,14 +27,17 @@
     NSLog(@"started parsing");
     // result array
     NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:[array count]];
-    
+    NSLog(@"result-count: %i",array.count);
     // loop to go through the array
     for (NSDictionary *dic in array) {
         
         // create a new car and init with name
         JKCar *car = [[JKCar alloc] initWithName:[dic objectForKey:@"name"]];
         
-        NSLog(@"%@",car);
+        //@TODO: Implement images
+        //car.image = [dic objectForKey:@"image"];
+        
+        NSLog(@"Car: %@",car.name);
         
         // array containing the found fuel items
         NSArray *foundFuelItems = [NSArray arrayWithArray:[dic objectForKey:@"fuelItems"]];
@@ -55,10 +58,12 @@
             NSNumber *price = [carDic objectForKey:@"price"];
             NSNumber *volume = [carDic objectForKey:@"volume"];
             NSNumber *distance = [carDic objectForKey:@"distance"];
-            CLLocation *location = [carDic objectForKey:@"location"];
+            NSDate *date = [carDic objectForKey:@"date"];
+            // @TODO: locations
+            //CLLocation *location = [carDic objectForKey:@"location"];
             
             // save as dictionary
-            NSDictionary* fuelDictionary = [NSDictionary dictionaryWithObjectsAndKeys:price,@"price",volume,@"volume",distance,@"distance",location,@"location", nil];
+            NSDictionary* fuelDictionary = [NSDictionary dictionaryWithObjectsAndKeys:price,@"price",volume,@"volume",distance,@"distance",date,@"date", nil];
             
             // init a fuel item with the dictionary
             JKFuelItem *aFuelItem = [[JKFuelItem alloc] initWithDictionary:fuelDictionary];
@@ -74,5 +79,41 @@
     }
     
     return [result copy];
+}
++ (NSArray *)getItemsByArray:(NSMutableArray *)aArray {
+    // copied array containing the results
+    NSArray *result = [aArray copy];
+    // the dicionary that will contain the parsed results
+    NSMutableArray *results = [NSMutableArray arrayWithCapacity:aArray.count];
+    
+    for (int i = 0; i < aArray.count; i++) {
+        
+        NSMutableDictionary *aCarDic = [[NSMutableDictionary alloc] initWithCapacity:2];
+        // mutable array that will be filled with car dictionarys
+        NSMutableArray *fuelDataArray = [[NSMutableArray alloc] init];
+        
+        // the current car
+        JKCar *currentCar = (JKCar*)result[i];
+        
+        NSLog(@"current car: %@",currentCar.name);
+        
+        for (int j = 0; j < currentCar.fuelItems.count; j++) {
+            
+            // the current fuel item
+            JKFuelItem *currentFuelItem = currentCar.fuelItems[j];
+            
+            // add a dictionary of the current fuel item to the fuel data array
+            [fuelDataArray addObject:[currentFuelItem dictionary]];
+        }
+        
+        // add the parsed fuel items as array to the result dictionary
+        [aCarDic setObject:currentCar.name forKey:@"name"];
+        [aCarDic setObject:fuelDataArray forKey:@"fuelItems"];
+        
+        [results addObject:aCarDic];
+    }
+    
+    // return a copy of the results
+    return [results copy];
 }
 @end

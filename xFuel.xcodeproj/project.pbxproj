@@ -17,7 +17,7 @@
 		503FBACA178ED47D00BE6664 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FBAC9178ED47D00BE6664 /* Default@2x.png */; };
 		503FBACC178ED47D00BE6664 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FBACB178ED47D00BE6664 /* Default-568h@2x.png */; };
 		503FBACF178ED47D00BE6664 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */; };
-		503FBAD2178ED47D00BE6664 /* JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAD1178ED47D00BE6664 /* JKViewController.m */; };
+		503FBAD2178ED47D00BE6664 /* JKPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAD1178ED47D00BE6664 /* JKPageController.m */; };
 		503FBADA178ED47D00BE6664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAD9178ED47D00BE6664 /* SenTestingKit.framework */; };
 		503FBADB178ED47D00BE6664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB5178ED47D00BE6664 /* UIKit.framework */; };
 		503FBADC178ED47D00BE6664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FBAB7178ED47D00BE6664 /* Foundation.framework */; };
@@ -26,6 +26,10 @@
 		503FBAF4178ED62900BE6664 /* JKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF3178ED62900BE6664 /* JKCar.m */; };
 		503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */; };
 		B98909491790011C00682BA2 /* JKPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B98909481790011C00682BA2 /* JKPlistParser.m */; };
+		B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B989095117901F4B00682BA2 /* JKCarViewController.m */; };
+		B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B989095217901F4B00682BA2 /* JKCarViewController.xib */; };
+		B9890959179026F600682BA2 /* JKCarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9890958179026F600682BA2 /* JKCarView.m */; };
+		B989095C17902E9500682BA2 /* fuelData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B989095B17902E9500682BA2 /* fuelData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +57,8 @@
 		503FBAC9178ED47D00BE6664 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		503FBACB178ED47D00BE6664 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		503FBACE178ED47D00BE6664 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		503FBAD0178ED47D00BE6664 /* JKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewController.h; sourceTree = "<group>"; };
-		503FBAD1178ED47D00BE6664 /* JKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKViewController.m; sourceTree = "<group>"; };
+		503FBAD0178ED47D00BE6664 /* JKPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPageController.h; sourceTree = "<group>"; };
+		503FBAD1178ED47D00BE6664 /* JKPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKPageController.m; sourceTree = "<group>"; };
 		503FBAD8178ED47D00BE6664 /* xFuelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xFuelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503FBAD9178ED47D00BE6664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		503FBAE1178ED47D00BE6664 /* xFuelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xFuelTests-Info.plist"; sourceTree = "<group>"; };
@@ -68,6 +72,12 @@
 		B98909471790011C00682BA2 /* JKPlistParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParser.h; sourceTree = "<group>"; };
 		B98909481790011C00682BA2 /* JKPlistParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPlistParser.m; sourceTree = "<group>"; };
 		B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParserProtocol.h; sourceTree = "<group>"; };
+		B989095017901F4B00682BA2 /* JKCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCarViewController.h; sourceTree = "<group>"; };
+		B989095117901F4B00682BA2 /* JKCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCarViewController.m; sourceTree = "<group>"; };
+		B989095217901F4B00682BA2 /* JKCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKCarViewController.xib; sourceTree = "<group>"; };
+		B9890957179026F600682BA2 /* JKCarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCarView.h; sourceTree = "<group>"; };
+		B9890958179026F600682BA2 /* JKCarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCarView.m; sourceTree = "<group>"; };
+		B989095B17902E9500682BA2 /* fuelData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fuelData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,9 @@
 				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
 				503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */,
 				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
+				B989095217901F4B00682BA2 /* JKCarViewController.xib */,
+				B9890957179026F600682BA2 /* JKCarView.h */,
+				B9890958179026F600682BA2 /* JKCarView.m */,
 				503FBABC178ED47D00BE6664 /* Supporting Files */,
 			);
 			path = xFuel;
@@ -185,8 +198,10 @@
 		503FBAF1178ED4E900BE6664 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				503FBAD0178ED47D00BE6664 /* JKViewController.h */,
-				503FBAD1178ED47D00BE6664 /* JKViewController.m */,
+				503FBAD0178ED47D00BE6664 /* JKPageController.h */,
+				503FBAD1178ED47D00BE6664 /* JKPageController.m */,
+				B989095017901F4B00682BA2 /* JKCarViewController.h */,
+				B989095117901F4B00682BA2 /* JKCarViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 		B9890946179000EE00682BA2 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				B989095B17902E9500682BA2 /* fuelData.plist */,
 				B98909471790011C00682BA2 /* JKPlistParser.h */,
 				B98909481790011C00682BA2 /* JKPlistParser.m */,
 				B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */,
@@ -278,6 +294,8 @@
 				503FBACA178ED47D00BE6664 /* Default@2x.png in Resources */,
 				503FBACC178ED47D00BE6664 /* Default-568h@2x.png in Resources */,
 				503FBACF178ED47D00BE6664 /* MainStoryboard.storyboard in Resources */,
+				B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */,
+				B989095C17902E9500682BA2 /* fuelData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,10 +332,12 @@
 			files = (
 				503FBAC2178ED47D00BE6664 /* main.m in Sources */,
 				503FBAC6178ED47D00BE6664 /* JKAppDelegate.m in Sources */,
-				503FBAD2178ED47D00BE6664 /* JKViewController.m in Sources */,
+				503FBAD2178ED47D00BE6664 /* JKPageController.m in Sources */,
 				503FBAF4178ED62900BE6664 /* JKCar.m in Sources */,
 				503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */,
 				B98909491790011C00682BA2 /* JKPlistParser.m in Sources */,
+				B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */,
+				B9890959179026F600682BA2 /* JKCarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

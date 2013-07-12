@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKCar.h"
 
 @interface JKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSMutableArray *allCars;
 
+- (JKCar*)carAtIndex:(NSUInteger)index;
+- (void)savePlist;
 @end

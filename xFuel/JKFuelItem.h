@@ -46,4 +46,8 @@
     CLLocation location
  */
 - (id)initWithDictionary:(NSDictionary*)dictionary;
+/** 
+ return a dictionary with the data
+ */
+- (NSDictionary *)dictionary;
 @end

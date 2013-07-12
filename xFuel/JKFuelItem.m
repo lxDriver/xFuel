@@ -29,7 +29,9 @@
         self.price = [dictionary objectForKey:@"price"];
         self.volume = [dictionary objectForKey:@"volume"];
         self.distance = [dictionary objectForKey:@"distance"];
-        self.location = [dictionary objectForKey:@"location"];
+        self.date = [NSDate date];
+        // @TODO: location
+        //self.location = [dictionary objectForKey:@"location"];
         
         [self refreshData];
     }
@@ -44,5 +46,8 @@
     
     // calculate the distance/volume
     self.distancePerVolume = [NSNumber numberWithFloat:(self.distance.floatValue / self.volume.floatValue)];
+}
+- (NSDictionary *)dictionary {
+    return [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.price,self.volume,self.distance,self.date, nil] forKeys:[NSArray arrayWithObjects:@"price",@"volume",@"distance",@"date",nil]];
 }
 @end

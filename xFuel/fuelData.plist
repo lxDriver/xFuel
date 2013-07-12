@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>first car</string>
+		<key>fuelItems</key>
+		<array>
+			<dict>
+				<key>price</key>
+				<integer>10</integer>
+				<key>volume</key>
+				<integer>8</integer>
+				<key>distance</key>
+				<integer>120</integer>
+				<key>date</key>
+				<date>2013-07-12T12:32:39Z</date>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
