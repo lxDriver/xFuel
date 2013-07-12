@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				503FBAF1178ED4E900BE6664 /* Controller */,
-				503FBAF0178ED4D900BE6664 /* Data */,
+				503FBAF0178ED4D900BE6664 /* Model */,
 				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
 				503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */,
 				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
@@ -166,7 +166,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		503FBAF0178ED4D900BE6664 /* Data */ = {
+		503FBAF0178ED4D900BE6664 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				503FBAF2178ED62900BE6664 /* JKCar.h */,
@@ -174,7 +174,7 @@
 				503FBAF6178ED6FF00BE6664 /* JKFuelItem.h */,
 				503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */,
 			);
-			name = Data;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		503FBAF1178ED4E900BE6664 /* Controller */ = {
@@ -482,6 +482,7 @@
 				503FBAEC178ED47D00BE6664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503FBAED178ED47D00BE6664 /* Build configuration list for PBXNativeTarget "xFuelTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				503FBAEF178ED47D00BE6664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
