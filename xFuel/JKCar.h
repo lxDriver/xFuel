@@ -23,4 +23,8 @@
  */
 @property (nonatomic, retain) NSMutableArray *fuelItems;
 
+/** 
+ class method to create fuel Items
+ */
++ (NSArray *)createItemsByArray:(NSArray *)array;
 @end
