@@ -34,9 +34,12 @@
     int numberOfCars = appDelegate.allCars.count;
     
     self.carController = [NSMutableArray arrayWithCapacity:numberOfCars];
+    self.pageControl = [[JKPageControl alloc] init];
     
-    self.pageControl.numberOfPages = numberOfCars;
+    self.pageControl.numberOfPages = numberOfCars+1;
+    self.pageControl.frame = CGRectMake(0,512,320,36);
     
+    [self.view addSubview:self.pageControl];
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * (numberOfCars + 1), self.scrollView.frame.size.height);
     
     // Iterate through all cars and display them
@@ -45,30 +48,16 @@
         
         JKCar *firstCar = [[JKCar alloc] initWithName:@"Dein Auto"];
 
-        JKCarViewController *firstCarController = [[JKCarViewController alloc] initWithPosition:0 andCar:firstCar];
+        [appDelegate.allCars addObject:firstCar];
         
         //[appDelegate.allCars addObject:firstCar];
-        [self.carController addObject:firstCarController];
-        firstCarController.view.tag = 20;
-        [self.scrollView addSubview:firstCarController.view];
-    } else {
+        //[self.carController addObject:firstCarController];
+        //firstCarController.view.tag = 20;
+        //[self.scrollView addSubview:firstCarController.view];
         
-        for(int i = 0; i < numberOfCars; i++) {
-            JKCar *aCar = appDelegate.allCars[i];
-        
-            JKCarViewController *aCarController = [[JKCarViewController alloc] initWithPosition:i andCar:aCar];
-            
-            [self.carController addObject:aCarController];
-            aCarController.view.tag = 20;
-            [self.scrollView addSubview:aCarController.view];
-            
-        }
-        
-        JKNewCarViewController *newCarController = [[JKNewCarViewController alloc] initWithPosition:numberOfCars assignTo:self];
-        [self.carController addObject:newCarController];
-        newCarController.view.tag = 20;
-        [self.scrollView addSubview:newCarController.view];
     }
+    
+    [self refreshScrollView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,11 +85,13 @@
 - (void)addCar:(JKCar*)car {
     JKAppDelegate *appDelegate = (JKAppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    // add the new car
     [appDelegate.allCars addObject:car];
     
-    NSLog(@"created new car");
+    // save plist
     [appDelegate savePlist];
-
+    
+    // refresh the scroll view
     [self refreshScrollView];
 }
 - (void)refreshScrollView {
@@ -110,10 +101,10 @@
     int numberOfCars = appDelegate.allCars.count;
     
     // refresh carController array
-    self.carController = [NSMutableArray arrayWithCapacity:numberOfCars];
+    self.carController = [NSMutableArray arrayWithCapacity:numberOfCars+1];
     
     // reset page Control
-    self.pageControl.numberOfPages = numberOfCars;
+    self.pageControl.numberOfPages = numberOfCars+1;
     
     // reset scrollView size 
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * (numberOfCars + 1), self.scrollView.frame.size.height);
@@ -121,31 +112,40 @@
     // iterate through all views with tag "20" in scrollView and delete those
     for (UIView * view in self.scrollView.subviews) {
         if (view.tag == 20) {
+            // delete the view
             [view removeFromSuperview];
-            NSLog(@"deleted view");
         }
     }
     
     // add new views to scrollView
     for (int i = 0; i < numberOfCars;i++) {
+        // create a new current car 
         JKCar *aCar = appDelegate.allCars[i];
         
+        // a new car controller for the view
         JKCarViewController *aCarController = [[JKCarViewController alloc] initWithPosition:i andCar:aCar];
         
+        // add the new car controller to an array to keep the reference count
         [self.carController addObject:aCarController];
+        // add a tag to the view for delete purpose (see above)
         aCarController.view.tag = 20;
-        
+        // add the view to the scroll view
         [self.scrollView addSubview:aCarController.view];
-        NSLog(@"added %i view",i);
     }
     
     // last add the new car controller
     JKNewCarViewController *newCarController = [[JKNewCarViewController alloc] initWithPosition:numberOfCars assignTo:self];
+    // add the new car controller to an array to keep the reference count
     [self.carController addObject:newCarController];
-    
+    // add a tag to the view for delete purpose (see above)
     newCarController.view.tag = 20;
+    // add the view to the scroll view
     [self.scrollView addSubview:newCarController.view];
     
+    // modifiy pageControl
+    [self.pageControl setImage:[UIImage imageNamed:@"plus"] forPage:numberOfCars];
+    [self.pageControl setCurrentImage:[UIImage imageNamed:@"plus"] forPage:numberOfCars];
+    // display the scrollView again
     [self.scrollView setNeedsDisplay];
 }
 @end

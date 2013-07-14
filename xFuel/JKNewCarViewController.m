@@ -63,12 +63,21 @@
     return self;
 }
 - (IBAction)createNewCar:(id)sender {
-    // create car
-    JKCar *car = [[JKCar alloc] initWithName:self.name.text];
-    car.fuelType = self.fuelType.text;
-    
-    // add car
-    [self.pageController addCar:car];
+    if (self.name.text.length > 0 && self.fuelType.text.length > 0) {
+        // create car
+        JKCar *car = [[JKCar alloc] initWithName:self.name.text];
+        car.fuelType = self.fuelType.text;
+        
+        // add car
+        [self.pageController addCar:car];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notification"
+                                                        message:@"You need to enter some information."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 -(void)dismissKeyboard
 {

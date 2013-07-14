@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JKCar.h"
+#import "JKPageControl.h"
 
 @interface JKPageController : UIViewController <UIScrollViewDelegate>
 
@@ -19,7 +20,7 @@
 /**
  the page control showing where you are
  */
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) IBOutlet JKPageControl *pageControl;
 
 @property (strong, nonatomic) NSMutableArray *carController;
 

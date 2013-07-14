@@ -31,6 +31,9 @@
 		B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B989095117901F4B00682BA2 /* JKCarViewController.m */; };
 		B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B989095217901F4B00682BA2 /* JKCarViewController.xib */; };
 		B989095C17902E9500682BA2 /* fuelData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B989095B17902E9500682BA2 /* fuelData.plist */; };
+		B9F833C81792CCFB00E94D10 /* JKPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F833C71792CCFB00E94D10 /* JKPageControl.m */; };
+		B9F833CC1792D10E00E94D10 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F833CA1792D10E00E94D10 /* plus.png */; };
+		B9F833CD1792D10E00E94D10 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F833CB1792D10E00E94D10 /* plus@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,10 @@
 		B989095117901F4B00682BA2 /* JKCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCarViewController.m; sourceTree = "<group>"; };
 		B989095217901F4B00682BA2 /* JKCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKCarViewController.xib; sourceTree = "<group>"; };
 		B989095B17902E9500682BA2 /* fuelData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fuelData.plist; sourceTree = "<group>"; };
+		B9F833C61792CCFA00E94D10 /* JKPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPageControl.h; sourceTree = "<group>"; };
+		B9F833C71792CCFB00E94D10 /* JKPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPageControl.m; sourceTree = "<group>"; };
+		B9F833CA1792D10E00E94D10 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		B9F833CB1792D10E00E94D10 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +210,8 @@
 				B989095117901F4B00682BA2 /* JKCarViewController.m */,
 				50D08CD71791A6AE00ED39AD /* JKNewCarViewController.h */,
 				50D08CD81791A6AE00ED39AD /* JKNewCarViewController.m */,
+				B9F833C61792CCFA00E94D10 /* JKPageControl.h */,
+				B9F833C71792CCFB00E94D10 /* JKPageControl.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 		50D08CDC1791A6BF00ED39AD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B9F833C91792D0FE00E94D10 /* Assets */,
 				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
 				B989095217901F4B00682BA2 /* JKCarViewController.xib */,
 				50D08CD91791A6AE00ED39AD /* JKNewCarViewController.xib */,
@@ -226,6 +236,15 @@
 				B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */,
 			);
 			name = Parser;
+			sourceTree = "<group>";
+		};
+		B9F833C91792D0FE00E94D10 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B9F833CA1792D10E00E94D10 /* plus.png */,
+				B9F833CB1792D10E00E94D10 /* plus@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +327,8 @@
 				B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */,
 				B989095C17902E9500682BA2 /* fuelData.plist in Resources */,
 				50D08CDB1791A6AE00ED39AD /* JKNewCarViewController.xib in Resources */,
+				B9F833CC1792D10E00E94D10 /* plus.png in Resources */,
+				B9F833CD1792D10E00E94D10 /* plus@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +371,7 @@
 				B98909491790011C00682BA2 /* JKPlistParser.m in Sources */,
 				B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */,
 				50D08CDA1791A6AE00ED39AD /* JKNewCarViewController.m in Sources */,
+				B9F833C81792CCFB00E94D10 /* JKPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
