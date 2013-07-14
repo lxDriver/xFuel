@@ -51,10 +51,6 @@
 - (void) update {
     self.name.text = self.car.name;
     self.fuelType.text = self.car.fuelType;
-    
-    JKAppDelegate *appDelegate = (JKAppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    [appDelegate.allCars addObject:self.car];
 }
 
 @end

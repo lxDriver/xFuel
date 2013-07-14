@@ -91,7 +91,7 @@
     
     NSData *plistData = [NSPropertyListSerialization dataWithPropertyList:[JKCar getItemsByArray:self.allCars] format:NSPropertyListXMLFormat_v1_0 options:NSPropertyListMutableContainersAndLeaves error:&error];
     
-    // check is plistData exists
+    // check if plistData exists
     if(plistData)
     {
         // write plistData to plist file

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKCar.h"
 
 @interface JKPageController : UIViewController <UIScrollViewDelegate>
 
@@ -20,4 +21,7 @@
  */
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
+@property (strong, nonatomic) NSMutableArray *carController;
+
+- (void)addCar:(JKCar*)car;
 @end
