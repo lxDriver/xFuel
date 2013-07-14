@@ -8,6 +8,7 @@
 
 #import "JKPageController.h"
 #import "JKCarViewController.h"
+#import "JKNewCarViewController.h"
 #import "JKCar.h"
 #import "JKAppDelegate.h"
 
@@ -16,8 +17,6 @@
 
 @implementation JKPageController
 
-@synthesize scrollView;
-@synthesize pageControl;
 
 - (void)viewDidLoad
 {
@@ -32,19 +31,36 @@
 */
 }
 - (void)viewDidAppear:(BOOL)animated {
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
-    
-    // @TODO: Iterate through all cars and display them
     JKAppDelegate *appDelegate = (JKAppDelegate *)[[UIApplication sharedApplication] delegate];
-    
     int numberOfCars = appDelegate.allCars.count;
     
-    for(int i = 0; i < numberOfCars; i++) {
-        JKCar *aCar = appDelegate.allCars[i];
+    self.pageControl.numberOfPages = numberOfCars;
+    
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * (numberOfCars + 1), self.scrollView.frame.size.height);
+    
+    // Iterate through all cars and display them
+    
+    if (numberOfCars == 0) {
         
-        JKCarViewController *firstCarController = [[JKCarViewController alloc] initWithPosition:i andCar:aCar];
+        JKCar *firstCar = [[JKCar alloc] initWithName:@"Dein Auto"];
+
+        JKCarViewController *firstCarController = [[JKCarViewController alloc] initWithPosition:0 andCar:firstCar];
+        
+        //[appDelegate.allCars addObject:firstCar];
         
         [self.scrollView addSubview:firstCarController.view];
+    } else {
+        
+        for(int i = 0; i < numberOfCars; i++) {
+            JKCar *aCar = appDelegate.allCars[i];
+        
+            JKCarViewController *aCarController = [[JKCarViewController alloc] initWithPosition:i andCar:aCar];
+        
+            [self.scrollView addSubview:aCarController.view];
+        }
+        
+        JKNewCarViewController *newCarController = [[JKNewCarViewController alloc] initWithPosition:numberOfCars];
+        [self.scrollView addSubview:newCarController.view];
     }
 }
 
@@ -62,13 +78,12 @@
 }
 - (IBAction)changePage:(id)sender
 {
-    /*
-    int page = self.pageControlHelp.currentPage;
-    CGRect frame = self.scrollViewHelp.frame;
+    int page = self.pageControl.currentPage;
+    CGRect frame = self.scrollView.frame;
     frame.origin.x = frame.size.width * page;
     frame.origin.y = 0;
-    //[self.scrollViewHelp scrollRectToVisible:frame animated:YES];
-     */
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+     
     NSLog(@"scrolled");
 }
 @end

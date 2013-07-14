@@ -25,6 +25,8 @@
 		503FBAE7178ED47D00BE6664 /* xFuelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAE6178ED47D00BE6664 /* xFuelTests.m */; };
 		503FBAF4178ED62900BE6664 /* JKCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF3178ED62900BE6664 /* JKCar.m */; };
 		503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */; };
+		50D08CDA1791A6AE00ED39AD /* JKNewCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D08CD81791A6AE00ED39AD /* JKNewCarViewController.m */; };
+		50D08CDB1791A6AE00ED39AD /* JKNewCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D08CD91791A6AE00ED39AD /* JKNewCarViewController.xib */; };
 		B98909491790011C00682BA2 /* JKPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B98909481790011C00682BA2 /* JKPlistParser.m */; };
 		B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B989095117901F4B00682BA2 /* JKCarViewController.m */; };
 		B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B989095217901F4B00682BA2 /* JKCarViewController.xib */; };
@@ -68,6 +70,9 @@
 		503FBAF3178ED62900BE6664 /* JKCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCar.m; sourceTree = "<group>"; };
 		503FBAF6178ED6FF00BE6664 /* JKFuelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFuelItem.h; sourceTree = "<group>"; };
 		503FBAF7178ED6FF00BE6664 /* JKFuelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFuelItem.m; sourceTree = "<group>"; };
+		50D08CD71791A6AE00ED39AD /* JKNewCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNewCarViewController.h; sourceTree = "<group>"; };
+		50D08CD81791A6AE00ED39AD /* JKNewCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNewCarViewController.m; sourceTree = "<group>"; };
+		50D08CD91791A6AE00ED39AD /* JKNewCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKNewCarViewController.xib; sourceTree = "<group>"; };
 		B98909471790011C00682BA2 /* JKPlistParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParser.h; sourceTree = "<group>"; };
 		B98909481790011C00682BA2 /* JKPlistParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPlistParser.m; sourceTree = "<group>"; };
 		B989094A1790014A00682BA2 /* JKPlistParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPlistParserProtocol.h; sourceTree = "<group>"; };
@@ -134,13 +139,12 @@
 		503FBABB178ED47D00BE6664 /* xFuel */ = {
 			isa = PBXGroup;
 			children = (
+				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
+				503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */,
 				B9890946179000EE00682BA2 /* Parser */,
 				503FBAF1178ED4E900BE6664 /* Controller */,
 				503FBAF0178ED4D900BE6664 /* Model */,
-				503FBAC4178ED47D00BE6664 /* JKAppDelegate.h */,
-				503FBAC5178ED47D00BE6664 /* JKAppDelegate.m */,
-				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
-				B989095217901F4B00682BA2 /* JKCarViewController.xib */,
+				50D08CDC1791A6BF00ED39AD /* UI */,
 				503FBABC178ED47D00BE6664 /* Supporting Files */,
 			);
 			path = xFuel;
@@ -197,8 +201,20 @@
 				503FBAD1178ED47D00BE6664 /* JKPageController.m */,
 				B989095017901F4B00682BA2 /* JKCarViewController.h */,
 				B989095117901F4B00682BA2 /* JKCarViewController.m */,
+				50D08CD71791A6AE00ED39AD /* JKNewCarViewController.h */,
+				50D08CD81791A6AE00ED39AD /* JKNewCarViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		50D08CDC1791A6BF00ED39AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				503FBACD178ED47D00BE6664 /* MainStoryboard.storyboard */,
+				B989095217901F4B00682BA2 /* JKCarViewController.xib */,
+				50D08CD91791A6AE00ED39AD /* JKNewCarViewController.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		B9890946179000EE00682BA2 /* Parser */ = {
@@ -291,6 +307,7 @@
 				503FBACF178ED47D00BE6664 /* MainStoryboard.storyboard in Resources */,
 				B989095417901F4B00682BA2 /* JKCarViewController.xib in Resources */,
 				B989095C17902E9500682BA2 /* fuelData.plist in Resources */,
+				50D08CDB1791A6AE00ED39AD /* JKNewCarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,7 @@
 				503FBAF8178ED6FF00BE6664 /* JKFuelItem.m in Sources */,
 				B98909491790011C00682BA2 /* JKPlistParser.m in Sources */,
 				B989095317901F4B00682BA2 /* JKCarViewController.m in Sources */,
+				50D08CDA1791A6AE00ED39AD /* JKNewCarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

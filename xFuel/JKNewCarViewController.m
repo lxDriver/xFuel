@@ -1,18 +1,19 @@
 //
-//  JKCarViewController.m
+//  JKNewCarViewController.m
 //  xFuel
 //
-//  Created by Julian Kleine on 12.07.13.
+//  Created by Julian Kleine on 13.07.13.
 //  Copyright (c) 2013 Julian Kleine. All rights reserved.
 //
 
-#import "JKCarViewController.h"
+#import "JKNewCarViewController.h"
 #import "JKAppDelegate.h"
-@interface JKCarViewController ()
+
+@interface JKNewCarViewController ()
 
 @end
 
-@implementation JKCarViewController
+@implementation JKNewCarViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,33 +29,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
+- (IBAction)dismissKeyboard:(UITextField*)textField
+{
+    [textField resignFirstResponder];
+    //[self.fuelType resignFirstResponder];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (id)initWithPosition:(NSInteger)position andCar:(JKCar*)car {
+
+- (id)initWithPosition:(NSInteger)position {
     if( self = [super init] ) {
         
-        self = [super initWithNibName:@"JKCarViewController" bundle:nil];
+        self = [super initWithNibName:@"JKNewCarViewController" bundle:nil];
         
         self.position = position;
-        self.car = car;
         
         [self.view setFrame:CGRectMake(320 * self.position, 0, 320, 510)];
-        
-        [self update];
+        //[self.createButton addTarget:self action:@selector(createNewCar:) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
-- (void) update {
-    self.name.text = self.car.name;
-    self.fuelType.text = self.car.fuelType;
-    
+- (IBAction)createNewCar:(id)sender {
+    /*
     JKAppDelegate *appDelegate = (JKAppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    [appDelegate.allCars addObject:self.car];
+    JKCar *car = [[JKCar alloc] initWithName:self.name.text];
+    car.fuelType = self.fuelType.text;
+    
+    [appDelegate.allCars addObject:car];*/
+    NSLog(@"create new car");
 }
 
 @end

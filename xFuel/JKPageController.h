@@ -10,10 +10,14 @@
 
 @interface JKPageController : UIViewController <UIScrollViewDelegate>
 
+/**
+ the scroll view displaying the cars
+ */
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
-@property (weak, nonatomic) IBOutlet UIView *firstView;
-@property (weak, nonatomic) IBOutlet UIView *secondView;
+/**
+ the page control showing where you are
+ */
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
