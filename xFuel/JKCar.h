@@ -39,4 +39,13 @@
  init with name
  */
 - (id)initWithName:(NSString *)aName;
+/**
+ return average fuel
+ */
+- (NSNumber *)averageFuel;
+/**
+ return average distance
+ */
+- (NSNumber *)averageDistance;
+
 @end

@@ -117,4 +117,24 @@
     // return a copy of the results
     return [results copy];
 }
+- (NSNumber *)averageFuel {
+    float avgFuel = 0.0;
+    int count = 0;
+    
+    for (JKFuelItem *currentFuelItem in self.fuelItems) {
+        avgFuel += [currentFuelItem.literPerHundred floatValue];
+        count++;
+    }
+    return [NSNumber numberWithFloat:(avgFuel/count)];
+}
+- (NSNumber *)averageDistance {
+    float avgDistance = 0.0;
+    int count = 0;
+    
+    for (JKFuelItem *currentFuelItem in self.fuelItems) {
+        avgDistance += [currentFuelItem.distance floatValue];
+        count++;
+    }
+    return [NSNumber numberWithFloat:(avgDistance/count)];
+}
 @end

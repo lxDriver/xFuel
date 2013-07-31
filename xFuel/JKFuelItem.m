@@ -46,6 +46,9 @@
     
     // calculate the distance/volume
     self.distancePerVolume = [NSNumber numberWithFloat:(self.distance.floatValue / self.volume.floatValue)];
+    
+    // calculate the liter/hundred
+    self.literPerHundred = [NSNumber numberWithFloat:(self.volume.floatValue / self.distance.floatValue)*100];
 }
 - (NSDictionary *)dictionary {
     return [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.price,self.volume,self.distance,self.date, nil] forKeys:[NSArray arrayWithObjects:@"price",@"volume",@"distance",@"date",nil]];

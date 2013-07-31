@@ -32,6 +32,10 @@
  */
 @property (nonatomic, retain) NSNumber *distancePerVolume;
 /**
+ the distance per volume - km/l
+ */
+@property (nonatomic, retain) NSNumber *literPerHundred;
+/**
  the date
  */
 @property (nonatomic, retain) NSDate *date;
